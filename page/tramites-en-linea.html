@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Pantalla accesible de consulta de trámites en línea del IESS."
+  >
+
+  <meta name="author" content="Erick Moreno">
+
+  <title>Trámites en línea | IESS</title>
+
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido-principal">
+    Saltar al contenido principal
+  </a>
+
+  <header>
+    <div class="topbar">
+      <div
+        class="brand"
+        aria-label="Instituto Ecuatoriano de Seguridad Social"
+      >
+        <div class="logo" aria-hidden="true">
+          IESS
+        </div>
+
+        <span>
+          Instituto Ecuatoriano de Seguridad Social
+        </span>
+      </div>
+
+      <span>Portal de servicios</span>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li>
+        <a href="../index.html">
+          Inicio
+        </a>
+      </li>
+
+      <li>
+        <a href="#consulta" aria-current="page">
+          Trámites en línea
+        </a>
+      </li>
+
+      <li>
+        <a href="#servicios">
+          Servicios frecuentes
+        </a>
+      </li>
+
+      <li>
+        <a href="#ayuda">
+          Ayuda
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="contenido-principal">
+    <section
+      class="hero"
+      aria-labelledby="titulo-pagina"
+    >
+      <h1 id="titulo-pagina">
+        Consulta de trámites en línea
+      </h1>
+
+      <p>
+        Revise el estado de una solicitud mediante su número de
+        identificación y código de trámite.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section
+        id="consulta"
+        aria-labelledby="titulo-consulta"
+      >
+        <h2 id="titulo-consulta">
+          Consultar estado
+        </h2>
+
+        <form
+          action="#"
+          method="get"
+          aria-describedby="ayuda-formulario"
+        >
+          <p id="ayuda-formulario">
+            Todos los campos marcados con * son obligatorios.
+          </p>
+
+          <div class="form-grid">
+            <div>
+              <label for="tipo-identificacion">
+                Tipo de identificación *
+              </label>
+
+              <select
+                id="tipo-identificacion"
+                name="tipo-identificacion"
+                required
+              >
+                <option value="">
+                  Seleccione una opción
+                </option>
+
+                <option value="cedula">
+                  Cédula
+                </option>
+
+                <option value="pasaporte">
+                  Pasaporte
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label for="identificacion">
+                Número de identificación *
+              </label>
+
+              <input
+                id="identificacion"
+                name="identificacion"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                required
+                aria-required="true"
+              >
+            </div>
+
+            <div>
+              <label for="codigo-tramite">
+                Código del trámite *
+              </label>
+
+              <input
+                id="codigo-tramite"
+                name="codigo-tramite"
+                type="text"
+                required
+                aria-required="true"
+              >
+            </div>
+
+            <div>
+              <label for="correo">
+                Correo electrónico
+              </label>
+
+              <input
+                id="correo"
+                name="correo"
+                type="email"
+                autocomplete="email"
+              >
+            </div>
+          </div>
+
+          <button type="submit">
+            Consultar trámite
+          </button>
+        </form>
+      </section>
+
+      <aside
+        id="ayuda"
+        aria-labelledby="titulo-ayuda"
+      >
+        <h2 id="titulo-ayuda">
+          Antes de consultar
+        </h2>
+
+        <ul>
+          <li>
+            Tenga disponible el código recibido al registrar la solicitud.
+          </li>
+
+          <li>
+            Verifique que la identificación esté escrita sin espacios.
+          </li>
+
+          <li>
+            No comparta sus credenciales con terceros.
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+    <section
+      id="servicios"
+      aria-labelledby="titulo-servicios"
+    >
+      <h2 id="titulo-servicios">
+        Servicios frecuentes
+      </h2>
+
+      <div class="cards">
+        <article>
+          <h3>Historia laboral</h3>
+
+          <p>
+            Consulte aportaciones y períodos registrados.
+          </p>
+
+          <a href="#">
+            Abrir servicio de historia laboral
+          </a>
+        </article>
+
+        <article>
+          <h3>Certificados</h3>
+
+          <p>
+            Genere certificados disponibles para afiliados.
+          </p>
+
+          <a href="#">
+            Abrir servicio de certificados
+          </a>
+        </article>
+
+        <article>
+          <h3>Citas médicas</h3>
+
+          <p>
+            Acceda a opciones de consulta y agendamiento.
+          </p>
+
+          <a href="#">
+            Abrir servicio de citas médicas
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 IESS - Prototipo académico elaborado por Erick Moreno.
+    </p>
+  </footer>
+</body>
+</html>
