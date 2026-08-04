@@ -21,11 +21,13 @@
 </head>
 
 <body>
+
   <a class="skip-link" href="#contenido-principal">
     Saltar al contenido principal
   </a>
 
   <header>
+
     <div class="topbar">
       <div
         class="brand"
@@ -42,37 +44,27 @@
 
       <span>Portal de servicios</span>
     </div>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./afiliados.html">Afiliados</a></li>
+        <li><a href="./pensionistas.html">Pensionistas</a></li>
+        <li><a href="./empleadores.html">Empleadores</a></li>
+        <li><a href="./atencion-ciudadana.html">Atención ciudadana</a></li>
+        <li><a href="./noticias-y-avisos.html">Noticias y avisos</a></li>
+        <li><a href="./consultas.html">Consultas</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./salud.html">Salud</a></li>
+        <li><a href="./tramites-en-linea.html" aria-current="page">Trámites en línea</a></li>
+        <li><a href="./ayuda-y-soporte.html">Ayuda y soporte</a></li>
+      </ul>
+    </nav>
+
   </header>
 
-  <nav aria-label="Navegación principal">
-    <ul>
-      <li>
-        <a href="../index.html">
-          Inicio
-        </a>
-      </li>
-
-      <li>
-        <a href="#consulta" aria-current="page">
-          Trámites en línea
-        </a>
-      </li>
-
-      <li>
-        <a href="#servicios">
-          Servicios frecuentes
-        </a>
-      </li>
-
-      <li>
-        <a href="#ayuda">
-          Ayuda
-        </a>
-      </li>
-    </ul>
-  </nav>
-
   <main id="contenido-principal">
+
     <section
       class="hero"
       aria-labelledby="titulo-pagina"
@@ -88,10 +80,12 @@
     </section>
 
     <div class="grid">
+
       <section
         id="consulta"
         aria-labelledby="titulo-consulta"
       >
+
         <h2 id="titulo-consulta">
           Consultar estado
         </h2>
@@ -101,11 +95,13 @@
           method="get"
           aria-describedby="ayuda-formulario"
         >
+
           <p id="ayuda-formulario">
             Todos los campos marcados con * son obligatorios.
           </p>
 
           <div class="form-grid">
+
             <div>
               <label for="tipo-identificacion">
                 Tipo de identificación *
@@ -116,17 +112,9 @@
                 name="tipo-identificacion"
                 required
               >
-                <option value="">
-                  Seleccione una opción
-                </option>
-
-                <option value="cedula">
-                  Cédula
-                </option>
-
-                <option value="pasaporte">
-                  Pasaporte
-                </option>
+                <option value="">Seleccione una opción</option>
+                <option value="cedula">Cédula</option>
+                <option value="pasaporte">Pasaporte</option>
               </select>
             </div>
 
@@ -142,7 +130,6 @@
                 inputmode="numeric"
                 autocomplete="off"
                 required
-                aria-required="true"
               >
             </div>
 
@@ -156,7 +143,6 @@
                 name="codigo-tramite"
                 type="text"
                 required
-                aria-required="true"
               >
             </div>
 
@@ -172,90 +158,74 @@
                 autocomplete="email"
               >
             </div>
+
           </div>
 
           <button type="submit">
             Consultar trámite
           </button>
+
         </form>
+
       </section>
 
       <aside
         id="ayuda"
         aria-labelledby="titulo-ayuda"
       >
+
         <h2 id="titulo-ayuda">
           Antes de consultar
         </h2>
 
         <ul>
-          <li>
-            Tenga disponible el código recibido al registrar la solicitud.
-          </li>
-
-          <li>
-            Verifique que la identificación esté escrita sin espacios.
-          </li>
-
-          <li>
-            No comparta sus credenciales con terceros.
-          </li>
+          <li>Tenga disponible el código recibido al registrar la solicitud.</li>
+          <li>Verifique que la identificación esté escrita sin espacios.</li>
+          <li>No comparta sus credenciales con terceros.</li>
         </ul>
+
       </aside>
+
     </div>
 
     <section
       id="servicios"
       aria-labelledby="titulo-servicios"
     >
+
       <h2 id="titulo-servicios">
         Servicios frecuentes
       </h2>
 
       <div class="cards">
+
         <article>
           <h3>Historia laboral</h3>
-
-          <p>
-            Consulte aportaciones y períodos registrados.
-          </p>
-
-          <a href="#">
-            Abrir servicio de historia laboral
-          </a>
+          <p>Consulte aportaciones y períodos registrados.</p>
+          <a href="#">Abrir servicio de historia laboral</a>
         </article>
 
         <article>
           <h3>Certificados</h3>
-
-          <p>
-            Genere certificados disponibles para afiliados.
-          </p>
-
-          <a href="#">
-            Abrir servicio de certificados
-          </a>
+          <p>Genere certificados disponibles para afiliados.</p>
+          <a href="#">Abrir servicio de certificados</a>
         </article>
 
         <article>
           <h3>Citas médicas</h3>
-
-          <p>
-            Acceda a opciones de consulta y agendamiento.
-          </p>
-
-          <a href="#">
-            Abrir servicio de citas médicas
-          </a>
+          <p>Acceda a opciones de consulta y agendamiento.</p>
+          <a href="#">Abrir servicio de citas médicas</a>
         </article>
+
       </div>
+
     </section>
+
   </main>
 
   <footer>
-    <p>
-      &copy; 2026 IESS - Prototipo académico elaborado por Erick Moreno.
-    </p>
+    <p>&copy; 2026 IESS - Prototipo académico elaborado por Erick Moreno.</p>
   </footer>
+
 </body>
 </html>
