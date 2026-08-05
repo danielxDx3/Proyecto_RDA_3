@@ -1,63 +1,289 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda y soporte - IESS</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Ayuda y soporte del IESS."
+  >
+
+  <meta name="author" content="Dany Moreno">
+
+  <title>Ayuda y soporte | IESS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../css/servicios.css">
 </head>
+
 <body>
 
-    <header>
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido principal
+  </a>
 
-        <details>
-            <summary>☰ Menú</summary>
-            <nav>
-                <ul>
-                    <li><a href="./afiliados.html">Afiliados</a></li>
-                    <li><a href="./pensionistas.html">Pensionistas</a></li>
-                    <li><a href="./empleadores.html">Empleadores</a></li>
-                    <li><a href="./atencion-ciudadana.html">Atención ciudadana</a></li>
-                    <li><a href="./noticias-y-avisos.html">Noticias y avisos</a></li>
-                    <li><a href="./consultas.html">Consultas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </details>
+  <div class="page-shell">
 
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
+    <header class="site-header">
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./marielenavasquez-salud.html">Salud</a></li>
-                <li><a href="./tramites-en-linea.html">Trámites en línea</a></li>
-                <li><a href="./ayuda-y-soporte.html">Ayuda y soporte</a></li>
-            </ul>
-        </nav>
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Ir al inicio"
+      >
+        <img
+          src="../img/Iess.png"
+          alt="Logo del IESS"
+        >
+      </a>
 
-        <form action="#" method="get">
-            <input type="search" placeholder="Buscar">
-            <button type="submit">Buscar</button>
-        </form>
+      <nav
+        class="desktop-nav"
+        aria-label="Navegación principal"
+      >
+        <a href="../index.html">
+          Inicio
+        </a>
+
+        <a href="./marielenavasquez-salud.html">
+          Salud
+        </a>
+
+        <a href="./tramites-en-linea.html">
+          Trámites en línea
+        </a>
+
+        <a
+          href="./ayuda-y-soporte.html"
+          aria-current="page"
+        >
+          Ayuda y soporte
+        </a>
+      </nav>
+
+      <button
+        class="search-button"
+        type="button"
+        aria-label="Buscar"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+      </button>
 
     </header>
 
-    <main>
+    <main
+      id="contenido"
+      class="content-box"
+    >
 
-        <h1>Ayuda y soporte</h1>
+      <section aria-labelledby="page-title">
 
-        <section>
+        <div class="section-title">
+
+          <h1 id="page-title">
+            Ayuda y soporte
+          </h1>
+
+        </div>
+
+        <div
+          class="title-line"
+          aria-hidden="true"
+        ></div>
+
+        <p class="page-intro">
+          Encuentra respuestas rápidas, material de apoyo y canales
+          digitales para resolver dudas sobre los servicios del IESS.
+        </p>
+
+        <div class="service-grid grid-4">
+
+          <article class="service-card">
+
+            <div class="icon-badge" aria-hidden="true">
+              <img
+                src="../img/Preguntas frecuentes.png"
+                alt=""
+              >
+            </div>
+
+            <h2>
+              Preguntas frecuentes
+            </h2>
+
             <p>
-                En esta sección encontrará información de ayuda, preguntas frecuentes,
-                canales de contacto y soporte para el uso de los servicios en línea del IESS.
+              Accede a las preguntas que más realizan
+              nuestros afiliados.
             </p>
-        </section>
+
+            <a class="card-button" href="#">
+              Ver preguntas frecuentes
+            </a>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="icon-badge" aria-hidden="true">
+              <img
+                src="../img/Video explicativo.png"
+                alt=""
+              >
+            </div>
+
+            <h2>
+              Video explicativo
+            </h2>
+
+            <p>
+              Accede a un video explicativo de lo que
+              necesitas hacer.
+            </p>
+
+            <a class="card-button" href="#">
+              Ver video explicativo
+            </a>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="icon-badge" aria-hidden="true">
+              <img
+                src="../img/Guía de uso.png"
+                alt=""
+              >
+            </div>
+
+            <h2>
+              Guía de uso
+            </h2>
+
+            <p>
+              Accede a una guía de uso de lo que
+              necesitas hacer.
+            </p>
+
+            <a class="card-button" href="#">
+              Ver guía de uso
+            </a>
+
+          </article>
+
+          <article class="service-card">
+
+            <div class="icon-badge" aria-hidden="true">
+              <img
+                src="../img/ChatBot.png"
+                alt=""
+              >
+            </div>
+
+            <h2>
+              Chatbot
+            </h2>
+
+            <p>
+              Accede al chatbot para agendar
+              tu cita médica.
+            </p>
+
+            <a class="card-button" href="#">
+              Ver chatbot
+            </a>
+
+          </article>
+
+        </div>
+
+      </section>
 
     </main>
 
-    <footer>
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
+    <footer class="site-footer">
+
+      <img
+        src="../img/Iess.png"
+        alt="Logo del IESS"
+      >
+
     </footer>
+
+  </div>
+
+  <nav
+    class="mobile-nav"
+    aria-label="Navegación móvil"
+  >
+
+    <a href="../index.html">
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m3 11 9-8 9 8"></path>
+        <path d="M5 10v10h14V10M9 20v-6h6v6"></path>
+      </svg>
+
+      <span>Inicio</span>
+
+    </a>
+
+    <a href="./marielenavasquez-salud.html">
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 12h4l2-5 4 10 2-5h6"></path>
+        <path d="M20 5c-2-2-5-2-7 0l-1 1-1-1C9 3 6 3 4 5c-3 3-2 8 1 11l7 6 7-6c3-3 4-8 1-11z"></path>
+      </svg>
+
+      <span>Salud</span>
+
+    </a>
+
+    <a href="./tramites-en-linea.html">
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18v12H3z"></path>
+        <path d="M8 10h8M8 14h5"></path>
+      </svg>
+
+      <span>Trámites</span>
+
+    </a>
+
+    <a
+      href="./ayuda-y-soporte.html"
+      aria-current="page"
+    >
+
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M9.7 9a2.4 2.4 0 1 1 3.5 2.1c-.8.4-1.2 1-1.2 1.9M12 17h.01"></path>
+      </svg>
+
+      <span>Ayuda</span>
+
+    </a>
+
+  </nav>
 
 </body>
 </html>
