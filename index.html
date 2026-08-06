@@ -2,117 +2,424 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Página de Inicio - IESS</title>
-  <link rel="stylesheet" href="styles/style.css">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portal principal del IESS con servicios, noticias y canales de contacto."
+  >
+
+  <meta
+    name="author"
+    content="Erick Moreno, Jorge Rueda y Marielena Vásquez"
+  >
+
+  <title>Página de inicio | IESS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
-  <header>
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido principal
+  </a>
 
-    <details>
-      <summary>☰ Menú</summary>
-      <nav>
+  <div class="page-shell">
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="site-header">
+
+      <a
+        class="brand"
+        href="./index.html"
+        aria-label="Ir a la página de inicio"
+      >
+        <img
+          src="./img/Iess.png"
+          alt="Logo del IESS"
+        >
+      </a>
+
+      <nav
+        class="desktop-nav"
+        aria-label="Navegación principal"
+      >
         <ul>
-          <li><a href="./pages/jorgerueda-afiliados.html">Afiliados</a></li>
-          <li><a href="./pages/pensionistas.html">Pensionistas</a></li>
-          <li><a href="./pages/empleadores.html">Empleadores</a></li>
-          <li><a href="./pages/atencion-ciudadana.html">Atención ciudadana</a></li>
-          <li><a href="./pages/noticias-y-avisos.html">Noticias y avisos</a></li>
-          <li><a href="./pages/consultas.html">Consultas</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+
+          <li>
+            <a
+              href="./index.html"
+              aria-current="page"
+            >
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/marielenavasquez-salud.html">
+              Salud
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/tramites-en-linea.html">
+              Trámites en línea
+            </a>
+          </li>
+
+          <li>
+            <a href="./pages/ayuda-y-soporte.html">
+              Ayuda y soporte
+            </a>
+          </li>
+
         </ul>
       </nav>
-    </details>
 
-    <img src="./img/05_logo.jpeg" alt="Logo IESS">
+      <!-- BUSCADOR DEL ENCABEZADO -->
 
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/marielenavasquez-salud.html">Salud</a></li>
-        <li><a href="./pages/tramites-en-linea.html">Trámites en línea</a></li>
-        <li><a href="./pages/ayuda-y-soporte.html">Ayuda y soporte</a></li>
-      </ul>
-    </nav>
+      <form
+        class="header-search"
+        role="search"
+        action="#"
+        method="get"
+      >
 
-    <form action="#" method="get">
-      <input type="search" placeholder="Buscar">
-      <button type="submit">Buscar</button>
-    </form>
+        <button
+          type="submit"
+          aria-label="Realizar búsqueda"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-4-4"></path>
+          </svg>
+        </button>
 
-  </header>
+        <label
+          class="visually-hidden"
+          for="busqueda"
+        >
+          Buscar
+        </label>
 
-  <main>
+        <input
+          type="search"
+          id="busqueda"
+          name="busqueda"
+          placeholder="Buscar"
+          autocomplete="off"
+        >
 
-    <section>
-      <div>
-        <h1>Bienvenido, conozca nuestros servicios</h1>
-        <a href="#">Servicios del IESS</a>
+      </form>
+
+    </header>
+
+    <!-- =====================================
+         CONTENIDO PRINCIPAL
+    ====================================== -->
+
+    <main id="contenido">
+
+      <!-- PORTADA -->
+
+      <section class="hero-section">
+
+        <div class="hero-content">
+
+          <h1>
+            Bienvenido,<br>
+            conozca<br>
+            nuestros<br>
+            servicios
+          </h1>
+
+          <a
+            class="hero-button"
+            href="./pages/tramites-en-linea.html"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <circle cx="8" cy="7" r="3"></circle>
+
+              <circle cx="16" cy="8" r="3"></circle>
+
+              <path
+                d="M2.8 18c.8-3 2.8-4.5 5.2-4.5s4.4 1.5 5.2 4.5"
+              ></path>
+
+              <path
+                d="M12.5 18c.7-2.4 2.2-3.7 4.5-3.7 2.2 0 3.8 1.3 4.4 3.7"
+              ></path>
+
+            </svg>
+
+            <span>
+              Servicios del IESS
+            </span>
+          </a>
+
+        </div>
+
+        <div class="hero-image">
+
+          <img
+            src="./img/01_banner_principal.jpeg"
+            alt="Persona consultando los servicios digitales del IESS"
+          >
+
+        </div>
+
+      </section>
+
+      <div
+        class="section-divider"
+        aria-hidden="true"
+      ></div>
+
+      <!-- =====================================
+           NOTICIAS
+      ====================================== -->
+
+      <section
+        class="news-section"
+        aria-labelledby="news-title"
+      >
+
+        <h2 id="news-title">
+          Noticias y avisos
+        </h2>
+
+        <div class="news-grid">
+
+          <!-- NOTICIA 1 -->
+
+          <article class="news-card">
+
+            <img
+              src="./img/02_noticia_convenios.jpeg"
+              alt="Convenios internacionales"
+            >
+
+            <p>
+              Convenios internacionales acercan los servicios
+              de la seguridad social.
+            </p>
+
+            <a href="#">
+              Leer más
+
+              <span aria-hidden="true">
+                ›
+              </span>
+            </a>
+
+          </article>
+
+          <!-- NOTICIA 2 -->
+
+          <article class="news-card">
+
+            <img
+              src="./img/03_noticia_hospital.jpeg"
+              alt="Atención hospitalaria"
+            >
+
+            <p>
+              Más de dos mil estudios con tomógrafo y ecógrafo
+              en Hospital General Portoviejo.
+            </p>
+
+            <a href="#">
+              Leer más
+
+              <span aria-hidden="true">
+                ›
+              </span>
+            </a>
+
+          </article>
+
+          <!-- NOTICIA 3 -->
+
+          <article class="news-card">
+
+            <img
+              src="./img/04_noticia_medicamentos.avif"
+              alt="Distribución de medicamentos"
+            >
+
+            <p>
+              Gobierno del presidente Noboa inicia distribución
+              de medicamentos antirretrovirales para el IESS.
+            </p>
+
+            <a href="#">
+              Leer más
+
+              <span aria-hidden="true">
+                ›
+              </span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <div
+        class="section-divider"
+        aria-hidden="true"
+      ></div>
+
+      <!-- =====================================
+           CONTACTOS
+      ====================================== -->
+
+      <section
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+
+        <h2 id="contact-title">
+          Contactos
+        </h2>
+
+        <div class="contact-box">
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4 13a8 8 0 0 1 16 0"></path>
+
+            <path
+              d="M4 13v4a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 2z"
+            ></path>
+
+            <path
+              d="M20 13v4a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 2z"
+            ></path>
+
+            <path d="M16 19c0 1.1-.9 2-2 2h-2"></path>
+          </svg>
+
+          <p>
+            Contacto: (02) 394 5666 — Lunes a viernes de 8:00 a 17:00
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer class="site-footer">
+
+      <div class="footer-brand">
+
+        <img
+          src="./img/Iess.png"
+          alt="Logo del IESS"
+        >
+
       </div>
 
-      <div>
-        <img src="./img/01_banner_principal.jpeg"
-             alt="Persona utilizando laptop para servicios en línea">
-      </div>
-    </section>
+    </footer>
 
-    <section>
+  </div>
 
-      <h2>Noticias y avisos</h2>
+  <!-- =====================================
+       NAVEGACIÓN MÓVIL
+  ====================================== -->
 
-      <article>
-        <img src="./img/02_noticia_convenios.jpeg"
-             alt="Convenios internacionales">
+  <nav
+    class="mobile-nav"
+    aria-label="Navegación móvil"
+  >
 
-        <p>
-          Convenios internacionales acercan los servicios de la seguridad social.
-        </p>
+    <a
+      href="./index.html"
+      aria-current="page"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m3 11 9-8 9 8"></path>
+        <path d="M5 10v10h14V10M9 20v-6h6v6"></path>
+      </svg>
 
-        <a href="#">Leer más</a>
-      </article>
+      <span>
+        Inicio
+      </span>
+    </a>
 
-      <article>
-        <img src="./img/03_noticia_hospital.jpeg"
-             alt="Estudios con tomógrafo y ecógrafo en Hospital General Portoviejo">
+    <a href="./pages/marielenavasquez-salud.html">
 
-        <p>
-          Más de dos mil estudios con tomógrafo y ecógrafo en Hospital General Portoviejo.
-        </p>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 12h4l2-5 4 10 2-5h6"></path>
 
-        <a href="#">Leer más</a>
-      </article>
+        <path
+          d="M20 5c-2-2-5-2-7 0l-1 1-1-1C9 3 6 3 4 5c-3 3-2 8 1 11l7 6 7-6c3-3 4-8 1-11z"
+        ></path>
+      </svg>
 
-      <article>
-        <img src="./img/04_noticia_medicamentos.avif"
-             alt="Distribución de medicamentos antirretrovirales">
+      <span>
+        Salud
+      </span>
+    </a>
 
-        <p>
-          Gobierno del presidente Noboa inicia distribución de medicamentos antirretrovirales para el IESS.
-        </p>
+    <a href="./pages/tramites-en-linea.html">
 
-        <a href="#">Leer más</a>
-      </article>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18v12H3z"></path>
+        <path d="M8 10h8M8 14h5"></path>
+      </svg>
 
-    </section>
+      <span>
+        Trámites
+      </span>
+    </a>
 
-    <section>
+    <a href="./pages/ayuda-y-soporte.html">
 
-      <h2>Contactos</h2>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"></circle>
 
-      <div>
-        <p>Contacto: (02) 394 5666</p>
-        <p>Lunes a viernes de 08:00 a 17:00</p>
-      </div>
+        <path
+          d="M9.7 9a2.4 2.4 0 1 1 3.5 2.1c-.8.4-1.2 1-1.2 1.9M12 17h.01"
+        ></path>
+      </svg>
 
-    </section>
+      <span>
+        Ayuda
+      </span>
+    </a>
 
-  </main>
-
-  <footer>
-
-    <img src="./img/05_logo.jpeg" alt="Logo IESS">
-
-  </footer>
+  </nav>
 
 </body>
 </html>
