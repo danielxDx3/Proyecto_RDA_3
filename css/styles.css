@@ -869,3 +869,54 @@ main {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* =========================================================
+   PANTALLA INDIVIDUAL - TRÁMITES EN LÍNEA
+========================================================= */
+
+.tramites-page {
+  width: 100%;
+
+  padding:
+    50px
+    clamp(30px, 6vw, 100px);
+}
+
+.tramites-heading {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.tramites-eyebrow {
+  margin-bottom: 10px;
+
+  color: var(--color-accent);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.tramites-heading h1 {
+  margin-bottom: 16px;
+
+  color: var(--color-primary);
+
+  font-size:
+    clamp(40px, 5vw, 64px);
+
+  line-height: 1.1;
+}
+
+.tramites-heading > p:last-child {
+  color: var(--color-muted);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
