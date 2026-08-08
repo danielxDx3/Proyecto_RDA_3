@@ -871,171 +871,514 @@ main {
 }
 
 /* =========================================================
-   PANTALLA INDIVIDUAL - TRÁMITES EN LÍNEA
+   PANTALLA INDIVIDUAL
+   TRÁMITES EN LÍNEA
+   ERICK
 ========================================================= */
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.tramites-main {
+  width: 100%;
+
+  background-color:
+    var(--color-surface);
+}
 
 .tramites-page {
   width: 100%;
 
+  min-height:
+    calc(100vh - 190px);
+
   padding:
-    50px
-    clamp(30px, 6vw, 100px);
-}
-
-.tramites-heading {
-  max-width: 900px;
-
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-.tramites-eyebrow {
-  margin-bottom: 10px;
-
-  color: var(--color-accent);
-
-  font-size: 14px;
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.08em;
-}
-
-.tramites-heading h1 {
-  margin-bottom: 16px;
-
-  color: var(--color-primary);
-
-  font-size:
-    clamp(40px, 5vw, 64px);
-
-  line-height: 1.1;
-}
-
-.tramites-heading > p:last-child {
-  color: var(--color-muted);
-
-  font-size: 18px;
-  line-height: 1.6;
+    45px
+    clamp(45px, 7vw, 130px)
+    55px;
 }
 
 /* =========================================================
-   TARJETAS DE TRÁMITES
+   TÍTULO
 ========================================================= */
 
-.tramites-grid {
+.tramites-title {
   width: 100%;
 
-  margin-top: 42px;
+  margin-bottom: 22px;
 
-  display: grid;
+  padding-bottom: 14px;
 
-  grid-template-columns:
-    repeat(4, minmax(0, 1fr));
-
-  gap: 28px;
-}
-
-.tramite-card {
-  min-height: 320px;
-
-  padding: 30px 24px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  border-radius: var(--radius-lg);
-
-  background-color: var(--color-accent);
-  color: var(--color-white);
+  border-bottom:
+    1px solid var(--color-border);
 
   text-align: center;
-
-  box-shadow: var(--shadow-soft);
 }
 
-.tramite-card:hover {
-  transform: translateY(-5px);
+.tramites-title h1 {
+  margin: 0;
 
-  box-shadow: var(--shadow-card);
+  color:
+    var(--color-primary);
+
+  font-size:
+    clamp(34px, 3vw, 48px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
 }
 
-.tramite-icon {
-  width: 72px;
-  height: 72px;
+/* =========================================================
+   COMPONENTE ADICIONAL
+   ALERTA INFORMATIVA
+========================================================= */
 
-  margin-bottom: 20px;
+.tramites-alert {
+  width:
+    min(760px, 100%);
+
+  margin:
+    0 auto 34px;
+
+  padding:
+    14px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  border-left:
+    5px solid
+    var(--color-primary);
+
+  border-radius:
+    var(--radius-md);
+
+  background-color:
+    #eaf5ff;
+
+  color:
+    var(--color-text);
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.tramites-alert-icon {
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
 
   display: grid;
   place-items: center;
 
   border-radius: 50%;
 
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  background-color:
+    var(--color-primary);
+
+  color:
+    var(--color-white);
 }
 
-.tramite-icon svg {
-  width: 38px;
-  height: 38px;
+.tramites-alert-icon svg {
+  width: 24px;
+  height: 24px;
 
   fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 2;
+
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.tramite-card h2 {
-  margin-bottom: 14px;
+.tramites-alert-text {
+  text-align: left;
+}
 
-  font-size: 22px;
+.tramites-alert-text strong {
+  display: block;
+
+  margin-bottom: 2px;
+
+  color:
+    var(--color-primary);
+
+  font-size: 15px;
+}
+
+.tramites-alert-text p {
+  margin: 0;
+
+  color:
+    var(--color-muted);
+
+  font-size: 13px;
+
+  line-height: 1.45;
+}
+
+/* =========================================================
+   PRIMERA FILA
+========================================================= */
+
+.tramites-grid {
+  width: 100%;
+
+  display: grid;
+
+  gap:
+    clamp(28px, 4vw, 70px);
+}
+
+.tramites-grid-top {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   SEGUNDA FILA
+========================================================= */
+
+.tramites-grid-bottom {
+  width: 68%;
+
+  margin:
+    54px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    clamp(30px, 5vw, 70px);
+}
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.tramite-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 180px;
+
+  padding:
+    42px 22px 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius:
+    14px;
+
+  background-color:
+    var(--color-accent);
+
+  color:
+    var(--color-white);
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 12px
+    rgba(0, 74, 153, 0.10);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.tramite-card:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 10px 22px
+    rgba(0, 74, 153, 0.17);
+}
+
+/* =========================================================
+   ICONO SOBRE LA TARJETA
+========================================================= */
+
+.tramite-image {
+  position: absolute;
+
+  top: -38px;
+  left: 50%;
+
+  width: 76px;
+  height: 76px;
+
+  transform:
+    translateX(-50%);
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color:
+    var(--color-surface);
+
+  color:
+    var(--color-primary);
+}
+
+.tramite-image img {
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+.tramite-image svg {
+  width: 50px;
+  height: 50px;
+
+  fill: none;
+
+  stroke:
+    var(--color-primary);
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.tramite-card h2 {
+  margin:
+    6px 0 7px;
+
+  font-size: 15px;
+
+  line-height: 1.25;
+
+  font-weight: 600;
 }
 
 .tramite-card p {
   flex: 1;
 
-  margin-bottom: 24px;
+  max-width: 300px;
 
-  font-size: 15px;
-  line-height: 1.6;
+  margin:
+    0 auto 11px;
+
+  font-size: 13px;
+
+  line-height: 1.45;
 }
 
+/* =========================================================
+   BOTÓN
+========================================================= */
+
 .tramite-button {
-  padding: 10px 22px;
+  min-width: 118px;
+
+  padding:
+    7px 18px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  gap: 8px;
+  border-radius:
+    var(--radius-pill);
 
-  border-radius: var(--radius-pill);
+  background-color:
+    var(--color-white);
 
-  background-color: var(--color-white);
-  color: var(--color-primary);
+  color:
+    #111111;
 
-  font-size: 14px;
+  font-size: 13px;
+
   font-weight: 700;
-}
 
-.tramite-button span {
-  font-size: 22px;
-  line-height: 1;
+  transition:
+    transform var(--transition),
+    background-color var(--transition);
 }
 
 .tramite-button:hover {
-  transform: translateY(-2px);
+  transform:
+    translateY(-2px);
 
-  background-color: #edf7ff;
+  background-color:
+    #edf7ff;
 }
 
 .tramite-button:focus-visible {
   outline:
-    4px solid rgba(255, 255, 255, 0.4);
+    4px solid
+    rgba(255, 255, 255, 0.35);
 
   outline-offset: 4px;
+}
+
+.tramite-button:active {
+  transform:
+    translateY(1px);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .tramites-page {
+    padding:
+      42px 28px 50px;
+  }
+
+  .tramites-grid-top {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    row-gap: 65px;
+  }
+
+  .tramites-grid-top .tramite-card:last-child {
+    grid-column: 1 / -1;
+
+    width:
+      min(420px, 100%);
+
+    justify-self: center;
+  }
+
+  .tramites-grid-bottom {
+    width: 100%;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .tramites-page {
+    padding:
+      32px 16px 40px;
+  }
+
+  .tramites-title {
+    margin-bottom: 20px;
+  }
+
+  .tramites-title h1 {
+    font-size: 30px;
+  }
+
+  /* ALERTA */
+
+  .tramites-alert {
+    margin-bottom: 40px;
+
+    padding:
+      13px 14px;
+
+    align-items:
+      flex-start;
+  }
+
+  .tramites-alert-icon {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+  }
+
+  .tramites-alert-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tramites-alert-text strong {
+    font-size: 14px;
+  }
+
+  .tramites-alert-text p {
+    font-size: 12px;
+  }
+
+  /* TARJETAS */
+
+  .tramites-grid-top,
+  .tramites-grid-bottom {
+    width: 100%;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 62px;
+  }
+
+  .tramites-grid-top .tramite-card:last-child {
+    grid-column: auto;
+
+    width: 100%;
+  }
+
+  .tramites-grid-bottom {
+    margin-top: 62px;
+  }
+
+  .tramite-card {
+    min-height: 165px;
+
+    padding:
+      40px 18px 16px;
+  }
+
+  .tramite-image {
+    width: 68px;
+    height: 68px;
+
+    top: -34px;
+  }
+
+  .tramite-image img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .tramite-image svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .tramite-card h2 {
+    font-size: 15px;
+  }
+
+  .tramite-card p {
+    font-size: 12px;
+  }
+
 }
