@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - IESS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | IESS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
-    <header>
+  <header class="site-header">
 
-        <details>
-            <summary>☰ Menú</summary>
-            <nav>
-                <ul>
-                    <li><a href="./afiliados.html">Afiliados</a></li>
-                    <li><a href="./pensionistas.html">Pensionistas</a></li>
-                    <li><a href="./empleadores.html">Empleadores</a></li>
-                    <li><a href="./atencion-ciudadana.html">Atención ciudadana</a></li>
-                    <li><a href="./noticias-y-avisos.html">Noticias y avisos</a></li>
-                    <li><a href="./consultas.html">Consultas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </details>
+    <a class="brand" href="../index.html">
+      <img src="../img/Iess.png" alt="Logo del IESS">
+    </a>
 
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./marielenavasquez-salud.html">Salud</a></li>
-                <li><a href="./tramites-en-linea.html">Trámites en línea</a></li>
-                <li><a href="./ayuda-y-soporte.html">Ayuda y soporte</a></li>
-            </ul>
-        </nav>
+        <li>
+          <a href="./marielenavasquez-salud.html">
+            Salud
+          </a>
+        </li>
 
-        <form action="#" method="get">
-            <input type="search" placeholder="Buscar">
-            <button type="submit">Buscar</button>
-        </form>
+        <li>
+          <a href="./tramites-en-linea.html">
+            Trámites en línea
+          </a>
+        </li>
 
-    </header>
+        <li>
+          <a href="./ayuda-y-soporte.html">
+            Ayuda y soporte
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-    <main>
+    <form class="header-search">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+      </button>
 
-        <h1>Contacto</h1>
+      <input
+        type="search"
+        placeholder="Buscar"
+        aria-label="Buscar"
+      >
+    </form>
 
-        <section>
-            <h2>Información de contacto</h2>
+  </header>
 
-            <p><strong>Teléfono:</strong> (02) 394 5666</p>
-            <p><strong>Horario de atención:</strong> Lunes a viernes de 08:00 a 17:00</p>
-            <p><strong>Correo electrónico:</strong> atencion@iess.gob.ec</p>
-            <p><strong>Dirección:</strong> Quito, Ecuador</p>
-        </section>
+  <main>
 
-    </main>
+    <section class="contact-page">
 
-    <footer>
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
-    </footer>
+      <h1>Contáctanos</h1>
+
+      <p>
+        Conoce los canales disponibles para comunicarte con el IESS.
+      </p>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
