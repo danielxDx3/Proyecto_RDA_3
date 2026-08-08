@@ -920,3 +920,122 @@ main {
   font-size: 18px;
   line-height: 1.6;
 }
+
+/* =========================================================
+   TARJETAS DE TRÁMITES
+========================================================= */
+
+.tramites-grid {
+  width: 100%;
+
+  margin-top: 42px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+.tramite-card {
+  min-height: 320px;
+
+  padding: 30px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: var(--radius-lg);
+
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  text-align: center;
+
+  box-shadow: var(--shadow-soft);
+}
+
+.tramite-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: var(--shadow-card);
+}
+
+.tramite-icon {
+  width: 72px;
+  height: 72px;
+
+  margin-bottom: 20px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.tramite-icon svg {
+  width: 38px;
+  height: 38px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tramite-card h2 {
+  margin-bottom: 14px;
+
+  font-size: 22px;
+}
+
+.tramite-card p {
+  flex: 1;
+
+  margin-bottom: 24px;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tramite-button {
+  padding: 10px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: var(--radius-pill);
+
+  background-color: var(--color-white);
+  color: var(--color-primary);
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tramite-button span {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.tramite-button:hover {
+  transform: translateY(-2px);
+
+  background-color: #edf7ff;
+}
+
+.tramite-button:focus-visible {
+  outline:
+    4px solid rgba(255, 255, 255, 0.4);
+
+  outline-offset: 4px;
+}
