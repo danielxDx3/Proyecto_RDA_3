@@ -11,7 +11,7 @@
   --color-muted: #6b7887;
   --color-border: #d5dee8;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  --font-family: "Open Sans", Arial, sans-serif;
 
   --space-xs: 8px;
   --space-sm: 16px;
@@ -33,6 +33,10 @@
   --transition: 0.2s ease;
 }
 
+
+/* =========================================================
+   2. ESTILOS GENERALES
+========================================================= */
 
 * {
   margin: 0;
@@ -87,6 +91,10 @@ input,
     box-shadow var(--transition);
 }
 
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
 .skip-link {
   position: fixed;
 
@@ -124,6 +132,10 @@ input,
   border: 0;
 }
 
+/* =========================================================
+   3. LAYOUT GENERAL
+========================================================= */
+
 .page-shell {
   width: 100%;
   min-height: 100vh;
@@ -136,6 +148,10 @@ input,
   background-color: var(--color-surface);
 }
 
+
+/* =========================================================
+   4. NAVEGACIÓN Y ENCABEZADO
+========================================================= */
 
 .site-header {
   width: 100%;
@@ -209,6 +225,10 @@ input,
   border-radius: 4px;
 }
 
+
+/* =========================================================
+   5. FORMULARIOS Y BUSCADORES
+========================================================= */
 
 .header-search {
   width: 270px;
@@ -301,6 +321,10 @@ main {
   background-color: var(--color-surface);
 }
 
+
+/* =========================================================
+   7. PANTALLA INICIO
+========================================================= */
 
 .hero-section {
   width: 100%;
@@ -400,6 +424,8 @@ main {
   background-color: var(--color-border);
 }
 
+
+/* --- Noticias y tarjetas de inicio --- */
 
 .news-section {
   width: 100%;
@@ -517,6 +543,8 @@ main {
 }
 
 
+/* --- Contacto breve de inicio --- */
+
 .contact-section {
   width: 100%;
 
@@ -569,6 +597,10 @@ main {
 .contact-box p {
   font-size: 15px;
 }
+
+/* =========================================================
+   FOOTER GENERAL
+========================================================= */
 
 .site-footer {
   width: 100%;
@@ -1384,6 +1416,1221 @@ main {
 }
 
 /* =========================================================
+   PANTALLA GRUPAL
+   ATENCIÓN CIUDADANA
+========================================================= */
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.atencion-main {
+  width: 100%;
+
+  background-color:
+    var(--color-surface);
+}
+
+.atencion-page {
+  width: 100%;
+
+  min-height:
+    calc(100vh - 190px);
+
+  padding:
+    60px
+    clamp(35px, 7vw, 120px);
+}
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.atencion-heading {
+  max-width: 850px;
+
+  margin:
+    0 auto 45px;
+
+  text-align: center;
+}
+
+.atencion-eyebrow {
+  margin-bottom: 10px;
+
+  color:
+    var(--color-accent);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+
+.atencion-heading h1 {
+  margin-bottom: 14px;
+
+  color:
+    var(--color-primary);
+
+  font-size:
+    clamp(40px, 4vw, 58px);
+
+  line-height: 1.15;
+}
+
+.atencion-heading > p:last-child {
+  max-width: 680px;
+
+  margin:
+    0 auto;
+
+  color:
+    var(--color-muted);
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.atencion-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap:
+    clamp(24px, 3vw, 40px);
+}
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.atencion-card {
+  min-height: 370px;
+
+  padding:
+    30px 26px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius:
+    var(--radius-lg);
+
+  background-color:
+    var(--color-accent);
+
+  color:
+    var(--color-white);
+
+  text-align: center;
+
+  box-shadow:
+    var(--shadow-soft);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.atencion-card:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    var(--shadow-card);
+}
+
+/* =========================================================
+   ICONOS
+========================================================= */
+
+.atencion-icon {
+  width: 74px;
+  height: 74px;
+
+  margin-bottom: 20px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color:
+    var(--color-white);
+
+  color:
+    var(--color-primary);
+}
+
+.atencion-icon svg {
+  width: 40px;
+  height: 40px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 1.8;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.atencion-card h2 {
+  margin-bottom: 14px;
+
+  font-size: 22px;
+
+  line-height: 1.3;
+}
+
+.atencion-card > p {
+  margin-bottom: 20px;
+
+  color:
+    rgba(255, 255, 255, 0.95);
+
+  font-size: 15px;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   INFORMACIÓN
+========================================================= */
+
+.atencion-info {
+  width: 100%;
+
+  margin-top: auto;
+  margin-bottom: 22px;
+
+  padding:
+    13px 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.35);
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.35);
+}
+
+.atencion-info strong {
+  font-size: 15px;
+}
+
+.atencion-info span {
+  font-size: 12px;
+
+  color:
+    rgba(255, 255, 255, 0.88);
+}
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.atencion-button {
+  min-width: 145px;
+
+  padding:
+    10px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius:
+    var(--radius-pill);
+
+  background-color:
+    var(--color-white);
+
+  color:
+    var(--color-primary);
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    transform var(--transition),
+    background-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.atencion-button:hover {
+  transform:
+    translateY(-2px);
+
+  background-color:
+    #edf7ff;
+}
+
+.atencion-button:active {
+  transform:
+    translateY(1px);
+}
+
+.atencion-button:focus-visible {
+  outline:
+    4px solid
+    rgba(255, 255, 255, 0.45);
+
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   INFORMACIÓN COMPLEMENTARIA
+========================================================= */
+
+.atencion-extra {
+  width:
+    min(850px, 100%);
+
+  margin:
+    45px auto 0;
+
+  padding:
+    20px 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border-left:
+    5px solid
+    var(--color-primary);
+
+  border-radius:
+    var(--radius-md);
+
+  background-color:
+    #eaf5ff;
+
+  color:
+    var(--color-text);
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.atencion-extra-icon {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color:
+    var(--color-primary);
+
+  color:
+    var(--color-white);
+}
+
+.atencion-extra-icon svg {
+  width: 27px;
+  height: 27px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.atencion-extra h2 {
+  margin:
+    0 0 4px;
+
+  color:
+    var(--color-primary);
+
+  font-size: 17px;
+}
+
+.atencion-extra p {
+  margin: 0;
+
+  color:
+    var(--color-muted);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FOCO VISIBLE
+========================================================= */
+
+.atencion-card:focus-within {
+  outline:
+    4px solid
+    rgba(11, 128, 189, 0.22);
+
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .atencion-page {
+    padding:
+      45px 28px;
+  }
+
+  .atencion-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .atencion-card:last-child {
+    grid-column:
+      1 / -1;
+
+    width:
+      min(500px, 100%);
+
+    justify-self:
+      center;
+  }
+
+}
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .atencion-page {
+    padding:
+      32px 16px;
+  }
+
+  .atencion-heading {
+    margin-bottom: 32px;
+  }
+
+  .atencion-eyebrow {
+    font-size: 12px;
+  }
+
+  .atencion-heading h1 {
+    font-size: 34px;
+  }
+
+  .atencion-heading > p:last-child {
+    font-size: 15px;
+  }
+
+  .atencion-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+  }
+
+  .atencion-card:last-child {
+    grid-column: auto;
+
+    width: 100%;
+  }
+
+  .atencion-card {
+    min-height: auto;
+
+    padding:
+      26px 20px;
+  }
+
+  .atencion-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .atencion-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .atencion-card h2 {
+    font-size: 20px;
+  }
+
+  .atencion-card > p {
+    font-size: 14px;
+  }
+
+  .atencion-button {
+    width: 100%;
+  }
+
+  .atencion-extra {
+    margin-top: 30px;
+
+    padding:
+      16px;
+
+    align-items:
+      flex-start;
+  }
+
+  .atencion-extra-icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .atencion-extra-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .atencion-extra h2 {
+    font-size: 15px;
+  }
+
+  .atencion-extra p {
+    font-size: 13px;
+  }
+
+}
+/* =========================================================
+   PANTALLA GRUPAL
+   AYUDA Y SOPORTE
+========================================================= */
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.ayuda-main {
+  width: 100%;
+
+  background-color:
+    var(--color-surface);
+}
+
+.ayuda-page {
+  width: 100%;
+
+  min-height:
+    calc(100vh - 190px);
+
+  padding:
+    55px
+    clamp(35px, 7vw, 120px);
+}
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.ayuda-heading {
+  max-width: 850px;
+
+  margin:
+    0 auto;
+
+  text-align: center;
+}
+
+.ayuda-eyebrow {
+  margin-bottom: 10px;
+
+  color:
+    var(--color-accent);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.08em;
+}
+
+.ayuda-heading h1 {
+  margin-bottom: 14px;
+
+  color:
+    var(--color-primary);
+
+  font-size:
+    clamp(40px, 4vw, 58px);
+
+  line-height: 1.15;
+}
+
+.ayuda-heading > p:last-child {
+  max-width: 680px;
+
+  margin:
+    0 auto;
+
+  color:
+    var(--color-muted);
+
+  font-size: 17px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   BUSCADOR DE AYUDA
+========================================================= */
+
+.ayuda-search {
+  width:
+    min(680px, 100%);
+
+  height: 56px;
+
+  margin:
+    34px auto 42px;
+
+  padding:
+    0 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  border:
+    1px solid
+    var(--color-border);
+
+  border-radius:
+    var(--radius-pill);
+
+  background-color:
+    var(--color-white);
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.ayuda-search svg {
+  width: 27px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  fill: none;
+
+  stroke:
+    var(--color-primary);
+
+  stroke-width: 2;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.ayuda-search input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background:
+    transparent;
+
+  color:
+    var(--color-text);
+
+  font-size: 16px;
+}
+
+.ayuda-search input::placeholder {
+  color:
+    var(--color-muted);
+}
+
+.ayuda-search:focus-within {
+  border-color:
+    var(--color-accent);
+
+  box-shadow:
+    0 0 0 4px
+    rgba(11, 128, 189, 0.15);
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.ayuda-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap:
+    clamp(20px, 2.5vw, 32px);
+}
+
+/* =========================================================
+   TARJETAS
+========================================================= */
+
+.ayuda-card {
+  min-height: 300px;
+
+  padding:
+    28px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius:
+    var(--radius-lg);
+
+  background-color:
+    var(--color-accent);
+
+  color:
+    var(--color-white);
+
+  text-align: center;
+
+  box-shadow:
+    var(--shadow-soft);
+
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.ayuda-card:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    var(--shadow-card);
+}
+
+.ayuda-card:focus-within {
+  outline:
+    4px solid
+    rgba(11, 128, 189, 0.20);
+
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   ICONOS
+========================================================= */
+
+.ayuda-icon {
+  width: 72px;
+  height: 72px;
+
+  margin-bottom: 18px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color:
+    var(--color-white);
+
+  color:
+    var(--color-primary);
+}
+
+.ayuda-icon svg {
+  width: 38px;
+  height: 38px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 1.8;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.ayuda-icon img {
+  width: 48px;
+  height: 48px;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.ayuda-card h2 {
+  margin-bottom: 12px;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+}
+
+.ayuda-card p {
+  flex: 1;
+
+  margin-bottom: 22px;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.ayuda-button {
+  min-width: 130px;
+
+  padding:
+    9px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius:
+    var(--radius-pill);
+
+  background-color:
+    var(--color-white);
+
+  color:
+    var(--color-primary);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    transform var(--transition),
+    background-color var(--transition);
+}
+
+.ayuda-button:hover {
+  transform:
+    translateY(-2px);
+
+  background-color:
+    #edf7ff;
+}
+
+.ayuda-button:focus-visible {
+  outline:
+    4px solid
+    rgba(255, 255, 255, 0.4);
+
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   PREGUNTAS FRECUENTES
+========================================================= */
+
+.ayuda-faq {
+  width:
+    min(900px, 100%);
+
+  margin:
+    50px auto 0;
+}
+
+.ayuda-faq > h2 {
+  margin-bottom: 20px;
+
+  color:
+    var(--color-primary);
+
+  text-align: center;
+
+  font-size: 30px;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    var(--color-border);
+
+  border-radius:
+    var(--radius-md);
+
+  background-color:
+    var(--color-white);
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.faq-item summary {
+  padding:
+    16px 20px;
+
+  cursor: pointer;
+
+  color:
+    var(--color-primary);
+
+  font-weight: 700;
+
+  list-style-position:
+    inside;
+}
+
+.faq-item summary:hover {
+  background-color:
+    #edf7ff;
+}
+
+.faq-item summary:focus-visible {
+  outline:
+    3px solid
+    var(--color-accent);
+
+  outline-offset:
+    -3px;
+}
+
+.faq-item p {
+  padding:
+    0 20px 18px;
+
+  color:
+    var(--color-muted);
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SOPORTE ADICIONAL
+========================================================= */
+
+.ayuda-support {
+  width:
+    min(950px, 100%);
+
+  margin:
+    45px auto 0;
+
+  padding:
+    22px 26px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border-left:
+    5px solid
+    var(--color-primary);
+
+  border-radius:
+    var(--radius-md);
+
+  background-color:
+    #eaf5ff;
+
+  box-shadow:
+    var(--shadow-soft);
+}
+
+.ayuda-support-icon {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background-color:
+    var(--color-primary);
+
+  color:
+    var(--color-white);
+}
+
+.ayuda-support-icon svg {
+  width: 28px;
+  height: 28px;
+
+  fill: none;
+
+  stroke:
+    currentColor;
+
+  stroke-width: 2;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.ayuda-support > div:nth-child(2) {
+  flex: 1;
+}
+
+.ayuda-support h2 {
+  margin-bottom: 4px;
+
+  color:
+    var(--color-primary);
+
+  font-size: 18px;
+}
+
+.ayuda-support p {
+  color:
+    var(--color-muted);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.ayuda-support-button {
+  flex-shrink: 0;
+
+  padding:
+    10px 20px;
+
+  border-radius:
+    var(--radius-pill);
+
+  background-color:
+    var(--color-primary);
+
+  color:
+    var(--color-white);
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.ayuda-support-button:hover {
+  transform:
+    translateY(-2px);
+
+  background-color:
+    var(--color-primary-dark);
+}
+
+.ayuda-support-button:focus-visible {
+  outline:
+    4px solid
+    rgba(0, 74, 153, 0.22);
+
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .ayuda-page {
+    padding:
+      45px 28px;
+  }
+
+  .ayuda-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+  .ayuda-page {
+    padding:
+      32px 16px;
+  }
+
+  .ayuda-eyebrow {
+    font-size: 12px;
+  }
+
+  .ayuda-heading h1 {
+    font-size: 34px;
+  }
+
+  .ayuda-heading > p:last-child {
+    font-size: 15px;
+  }
+
+  .ayuda-search {
+    height: 52px;
+
+    margin:
+      26px auto 32px;
+
+    padding:
+      0 16px;
+  }
+
+  .ayuda-search input {
+    font-size: 14px;
+  }
+
+  .ayuda-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+  }
+
+  .ayuda-card {
+    min-height: auto;
+
+    padding:
+      25px 20px;
+  }
+
+  .ayuda-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .ayuda-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ayuda-icon img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .ayuda-button {
+    width: 100%;
+  }
+
+  .ayuda-faq {
+    margin-top: 36px;
+  }
+
+  .ayuda-faq > h2 {
+    font-size: 25px;
+  }
+
+  .ayuda-support {
+    margin-top: 32px;
+
+    padding:
+      16px;
+
+    align-items:
+      flex-start;
+
+    flex-wrap:
+      wrap;
+  }
+
+  .ayuda-support-icon {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+  }
+
+  .ayuda-support-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ayuda-support > div:nth-child(2) {
+    min-width:
+      calc(100% - 60px);
+  }
+
+  .ayuda-support-button {
+    width: 100%;
+
+    text-align: center;
+  }
+
+}
+/* =========================================================
    COMPATIBILIDAD - PÁGINA AFILIADOS
    ========================================================= */
 
@@ -1807,4 +3054,3 @@ body:has(header > details) > footer > p {
     font-size: 11px;
   }
 }
-
