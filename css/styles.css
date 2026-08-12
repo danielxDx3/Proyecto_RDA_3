@@ -1616,3 +1616,195 @@ body:has(header > details) > footer > p {
   margin: 0;
   font-size: 13px;
 }
+
+/* =========================================================
+   AFILIADOS - TABLET
+   ========================================================= */
+
+@media (max-width: 1180px) {
+  body:has(header > details) > header {
+    padding: 12px 24px;
+    gap: 18px;
+  }
+
+  body:has(header > details) > header > img {
+    width: 115px;
+    height: 55px;
+    padding-right: 16px;
+  }
+
+  body:has(header > details) > header > nav ul {
+    gap: 18px;
+  }
+
+  body:has(header > details) > header > nav a {
+    font-size: 13px;
+  }
+
+  body:has(header > details) > header > form {
+    width: 210px;
+    min-width: 180px;
+    padding: 0 14px;
+  }
+
+  body:has(header > details) > main {
+    padding: 45px 28px 60px;
+  }
+}
+
+/* =========================================================
+   AFILIADOS - MÓVIL
+   ========================================================= */
+
+@media (max-width: 760px) {
+  body:has(header > details) {
+    padding-bottom: 0;
+  }
+
+  body:has(header > details) > header {
+    min-height: 72px;
+    padding: 8px 14px;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  body:has(header > details) > header > details {
+    position: relative;
+    display: block;
+    order: 1;
+    flex-shrink: 0;
+  }
+
+  body:has(header > details) > header > details summary {
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    color: var(--color-white);
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  body:has(header > details) > header > details[open] summary {
+    background-color: rgba(255, 255, 255, 0.20);
+  }
+
+  body:has(header > details) > header > details nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 240px;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-card);
+  }
+
+  body:has(header > details) > header > details nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  body:has(header > details) > header > details nav a {
+    display: block;
+    padding: 11px 12px;
+    border-radius: 8px;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  body:has(header > details) > header > details nav a:hover {
+    background-color: #edf7ff;
+  }
+
+  body:has(header > details) > header > img {
+    order: 2;
+    width: 82px;
+    height: 42px;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  body:has(header > details) > header > nav {
+    display: none;
+  }
+
+  body:has(header > details) > header > form {
+    order: 3;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    height: 46px;
+    margin-left: auto;
+    padding: 0 12px;
+  }
+
+  body:has(header > details) > header > form input {
+    font-size: 14px;
+  }
+
+  body:has(header > details) > header > form button {
+    font-size: 0;
+  }
+
+  body:has(header > details) > header > form button::before {
+    content: "⌕";
+    font-size: 21px;
+  }
+
+  body:has(header > details) > main {
+    padding: 32px 16px 45px;
+  }
+
+  body:has(header > details) > main > h1 {
+    margin-bottom: 48px;
+    font-size: 32px;
+  }
+
+  body:has(header > details) > main > section {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+  body:has(header > details) > main > section > article {
+    min-height: 225px;
+    padding: 28px 18px 22px;
+  }
+
+  body:has(header > details) > main > section > article > img {
+    width: 70px;
+    height: 70px;
+  }
+
+  body:has(header > details) > main > section > article h2 {
+    font-size: 19px;
+  }
+
+  body:has(header > details) > main > section > article p {
+    font-size: 13px;
+  }
+
+  body:has(header > details) > main > section > article a {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  body:has(header > details) > footer {
+    min-height: 80px;
+    padding: 12px 16px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  body:has(header > details) > footer > img {
+    display: none;
+  }
+
+  body:has(header > details) > footer > p {
+    font-size: 11px;
+  }
+}
+
