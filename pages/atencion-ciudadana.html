@@ -1,64 +1,407 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atención ciudadana - IESS</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Canales de atención ciudadana del Instituto Ecuatoriano de Seguridad Social."
+  >
+
+  <meta
+    name="author"
+    content="Erick Moreno, Jorge Rueda y Marielena Vásquez"
+  >
+
+  <title>Atención ciudadana | IESS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Hoja general del proyecto -->
+  <link
+    rel="stylesheet"
+    href="../css/styles.css"
+  >
 </head>
+
 <body>
 
-    <header>
+  <div class="page-shell">
 
-        <details>
-            <summary>☰ Menú</summary>
-            <nav>
-                <ul>
-                    <li><a href="./afiliados.html">Afiliados</a></li>
-                    <li><a href="./pensionistas.html">Pensionistas</a></li>
-                    <li><a href="./empleadores.html">Empleadores</a></li>
-                    <li><a href="./atencion-ciudadana.html">Atención ciudadana</a></li>
-                    <li><a href="./noticias-y-avisos.html">Noticias y avisos</a></li>
-                    <li><a href="./consultas.html">Consultas</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </details>
+    <!-- =====================================================
+         HEADER GENERAL
+    ====================================================== -->
 
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
+    <header class="site-header">
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./marielenavasquez-salud.html">Salud</a></li>
-                <li><a href="./tramites-en-linea.html">Trámites en línea</a></li>
-                <li><a href="./ayuda-y-soporte.html">Ayuda y soporte</a></li>
-            </ul>
-        </nav>
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Ir al inicio"
+      >
+        <img
+          src="../img/Iess.png"
+          alt="Logo del IESS"
+        >
+      </a>
 
-        <form action="#" method="get">
-            <input type="search" placeholder="Buscar">
-            <button type="submit">Buscar</button>
-        </form>
+      <nav
+        class="desktop-nav"
+        aria-label="Navegación principal"
+      >
+        <ul>
+
+          <li>
+            <a href="../index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="./marielenavasquez-salud.html">
+              Salud
+            </a>
+          </li>
+
+          <li>
+            <a href="./tramites-en-linea.html">
+              Trámites en línea
+            </a>
+          </li>
+
+          <li>
+            <a href="./ayuda-y-soporte.html">
+              Ayuda y soporte
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- BUSCADOR GENERAL -->
+
+      <form
+        class="header-search"
+        role="search"
+      >
+
+        <button
+          type="submit"
+          aria-label="Buscar"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+            ></circle>
+
+            <path d="m20 20-4-4"></path>
+          </svg>
+        </button>
+
+        <label
+          for="busqueda-atencion"
+          class="visually-hidden"
+        >
+          Buscar
+        </label>
+
+        <input
+          type="search"
+          id="busqueda-atencion"
+          name="busqueda"
+          placeholder="Buscar"
+          autocomplete="off"
+        >
+
+      </form>
 
     </header>
 
-    <main>
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
 
-        <h1>Atención ciudadana</h1>
+    <main class="atencion-main">
 
-        <section>
+      <section class="atencion-page">
+
+        <!-- =================================================
+             TÍTULO
+        ================================================== -->
+
+        <div class="atencion-heading">
+
+          <p class="atencion-eyebrow">
+            Canales de servicio
+          </p>
+
+          <h1>
+            Atención ciudadana
+          </h1>
+
+          <p>
+            Encuentra los diferentes canales disponibles
+            para comunicarte con el IESS y recibir asistencia.
+          </p>
+
+        </div>
+
+        <!-- =================================================
+             TARJETAS
+        ================================================== -->
+
+        <div class="atencion-grid">
+
+          <!-- TELÉFONO -->
+
+          <article class="atencion-card">
+
+            <div class="atencion-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 13a8 8 0 0 1 16 0"
+                ></path>
+
+                <path
+                  d="M4 13v4a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 2z"
+                ></path>
+
+                <path
+                  d="M20 13v4a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 2z"
+                ></path>
+
+                <path
+                  d="M16 19c0 1.1-.9 2-2 2h-2"
+                ></path>
+              </svg>
+
+            </div>
+
+            <h2>
+              Atención telefónica
+            </h2>
+
             <p>
-                Bienvenido a la sección de Atención Ciudadana del IESS. Aquí encontrará
-                información sobre los canales de atención, servicios disponibles y
-                asistencia para realizar sus trámites.
+              Comunícate con nuestros canales de atención
+              para realizar consultas y recibir orientación.
             </p>
+
+            <div class="atencion-info">
+              <strong>
+                (02) 394 5666
+              </strong>
+
+              <span>
+                Lunes a viernes de 08:00 a 17:00
+              </span>
+            </div>
+
+            <a
+              href="tel:023945666"
+              class="atencion-button"
+            >
+              Llamar ahora
+            </a>
+
+          </article>
+
+          <!-- CORREO -->
+
+          <article class="atencion-card">
+
+            <div class="atencion-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="2"
+                ></rect>
+
+                <path
+                  d="m3 7 9 6 9-6"
+                ></path>
+              </svg>
+
+            </div>
+
+            <h2>
+              Correo electrónico
+            </h2>
+
+            <p>
+              Envía tus consultas mediante los canales
+              digitales oficiales de atención al ciudadano.
+            </p>
+
+            <div class="atencion-info">
+              <strong>
+                Atención en línea
+              </strong>
+
+              <span>
+                Utiliza únicamente canales oficiales
+              </span>
+            </div>
+
+            <a
+              href="mailto:contacto@iess.gob.ec"
+              class="atencion-button"
+            >
+              Enviar correo
+            </a>
+
+          </article>
+
+          <!-- OFICINAS -->
+
+          <article class="atencion-card">
+
+            <div class="atencion-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11z"
+                ></path>
+
+                <circle
+                  cx="12"
+                  cy="10"
+                  r="2"
+                ></circle>
+              </svg>
+
+            </div>
+
+            <h2>
+              Oficinas de atención
+            </h2>
+
+            <p>
+              Consulta los puntos de atención disponibles
+              para realizar trámites de manera presencial.
+            </p>
+
+            <div class="atencion-info">
+              <strong>
+                Atención presencial
+              </strong>
+
+              <span>
+                Consulta la oficina más cercana
+              </span>
+            </div>
+
+            <a
+              href="#oficinas"
+              class="atencion-button"
+            >
+              Ver oficinas
+            </a>
+
+          </article>
+
+        </div>
+
+        <!-- =================================================
+             INFORMACIÓN COMPLEMENTARIA
+        ================================================== -->
+
+        <section
+          class="atencion-extra"
+          id="oficinas"
+        >
+
+          <div class="atencion-extra-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+              ></circle>
+
+              <path d="M12 11v5"></path>
+
+              <path d="M12 8h.01"></path>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <h2>
+              Antes de acudir a una oficina
+            </h2>
+
+            <p>
+              Verifica los horarios de atención y lleva
+              contigo los documentos necesarios para el trámite
+              que deseas realizar.
+            </p>
+
+          </div>
+
         </section>
+
+      </section>
 
     </main>
 
-    <footer>
-        <img src="../img/05_logo.jpeg" alt="Logo IESS">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+
+      <div class="footer-brand">
+
+        <img
+          src="../img/Iess.png"
+          alt="Logo del IESS"
+        >
+
+      </div>
+
     </footer>
+
+  </div>
 
 </body>
 </html>
