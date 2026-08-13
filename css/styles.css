@@ -3183,7 +3183,7 @@ body:has(header > details) > footer > p {
 }
 
 .card {
-  background-color: var(--color-white);
+  background-color: var(--color-accent);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-md);
@@ -3198,8 +3198,8 @@ body:has(header > details) > footer > p {
 }
 
 .card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto var(--space-sm);
   display: block;
 }
@@ -3207,11 +3207,12 @@ body:has(header > details) > footer > p {
 .card h2 {
   font-size: 20px;
   margin-bottom: var(--space-xs);
+  color: var(--color-white);
 }
 
 .card p {
   font-size: 15px;
-  color: var(--color-muted);
+  color: var(--color-white);
   margin-bottom: var(--space-sm);
 }
 
