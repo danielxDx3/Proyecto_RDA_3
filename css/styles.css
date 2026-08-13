@@ -3145,3 +3145,95 @@ body:has(header > details) > footer > p {
   outline: 4px solid rgba(11, 128, 189, 0.25);
   outline-offset: 4px;
 }
+
+
+.pensionistas-main {
+  width: 100%;
+  background-color: var(--color-surface);
+}
+
+.pensionistas-hero {
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+  background-color: var(--color-primary); 
+  color: var(--color-white);
+}
+
+.pensionistas-hero h1 {
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 700;
+  margin-bottom: var(--space-sm); 
+}
+
+.pensionistas-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-sm);
+  display: block;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: var(--space-xs);
+}
+
+.card p {
+  font-size: 15px;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.btn {
+  min-width: 118px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform var(--transition), background-color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-primary-dark);
+}
+
+.btn:focus-visible {
+  outline: 4px solid rgba(11, 128, 189, 0.25);
+  outline-offset: 4px;
+}
