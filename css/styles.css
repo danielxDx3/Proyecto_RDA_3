@@ -1384,7 +1384,8 @@ main {
 }
 
 /* =========================================================
-   COMPATIBILIDAD - PÁGINA AFILIADOS
+   COMPATIBILIDAD - PÁGINA AFILIADOS, CONSULTAS
+   CONTACTO, NOTICIAS Y AVISOS
    ========================================================= */
 
 body:has(header > details) {
@@ -1618,7 +1619,8 @@ body:has(header > details) > footer > p {
 }
 
 /* =========================================================
-   AFILIADOS - TABLET
+   AFILIADOS, CONSULTAS
+   CONTACTO, NOTICIAS Y AVISOS - TABLET
    ========================================================= */
 
 @media (max-width: 1180px) {
@@ -1653,7 +1655,8 @@ body:has(header > details) > footer > p {
 }
 
 /* =========================================================
-   AFILIADOS - MÓVIL
+   AFILIADOS, CONSULTAS
+   CONTACTO, NOTICIAS Y AVISOS - MÓVIL
    ========================================================= */
 
 @media (max-width: 760px) {
@@ -1807,4 +1810,3 @@ body:has(header > details) > footer > p {
     font-size: 11px;
   }
 }
-
